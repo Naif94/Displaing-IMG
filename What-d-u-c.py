@@ -5,7 +5,7 @@ Created on Mon Sep  7 16:05:33 2020
 
 @author: naifali
 """
-
+import glob
 import pygame
 import time
 import speech_recognition as sr
@@ -28,9 +28,9 @@ pygame.display.set_caption('GUI Speech Recognition')
 
 image_list = []
 image_name=[]
-for filename in glop.glop('IMG/*.*'):
+for filename in glob.glob('IMG/*.*'):
     image_list.append(filename)
-    image_name.append(filename.split('\\'[1].split('.')[0])
+    image_name.append(filename.split('\\')[1].split('.')[0])
 
 
 
@@ -68,7 +68,7 @@ def button(msg,x,y,w,h,ic,ac,action=None):
    gameDisplay.blit(textSurf, textRect)
 
 def s2t():
-   `#gameDisplay.blit(carImg,(0,0))
+   #gameDisplay.blit(carImg,(0,0))
    r = sr.Recognizer()
 
    with sr.Microphone() as source:
@@ -82,10 +82,10 @@ def s2t():
 
    a = 33 
    if a == 33:
-   index=0
-   gameDisplay.fill(white)
-   carImg = pygame.image.load(image_list[index])
-   gameDisplay.blit(carImg,(0,0))
+       index=0
+       gameDisplay.fill(white)
+       carImg = pygame.image.load(image_list[index])
+       gameDisplay.blit(carImg,(0,0))
        if text == 'dog':
            message_display('good job')
        else:
