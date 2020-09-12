@@ -5,6 +5,7 @@ Created on Mon Sep  7 16:05:33 2020
 
 @author: naifali
 """
+
 import glob
 import pygame
 import time
@@ -24,13 +25,7 @@ bright_red = (255,0,0)
 bright_green = (0,255,0)
 
 gameDisplay = pygame.display.set_mode((display_width,display_height))
-pygame.display.set_caption('GUI Speech Recognition')
-
-image_list = []
-image_name=[]
-for filename in glob.glob('IMG/*.*'):
-    image_list.append(filename)
-    image_name.append(filename.split('\\')[1].split('.')[0])
+pygame.display.set_caption('Recognizing pictures')
 
 
 
@@ -68,7 +63,7 @@ def button(msg,x,y,w,h,ic,ac,action=None):
    gameDisplay.blit(textSurf, textRect)
 
 def s2t():
-   #gameDisplay.blit(carImg,(0,0))
+   
    r = sr.Recognizer()
 
    with sr.Microphone() as source:
@@ -76,23 +71,29 @@ def s2t():
        audio = r.listen(source)
        print ('Done!')
 
-   text = r.recognize_google(audio)
-   print(text)
-   #message_display(text)
+   image_list = []
 
-   a = 33 
-   if a == 33:
-       index=0
-       gameDisplay.fill(white)
-       carImg = pygame.image.load(image_list[index])
-       gameDisplay.blit(carImg,(0,0))
-       if text == 'dog':
-           message_display('good job')
-       else:
-           message_display('wrong')
-           
-   elif a == 34:
-       print("othe pic should be here so on ")
+   for filename in glob.glob('IMG/*.jpg'):
+    
+    image_list.append(pygame.image.load(filename))
+    
+    name_list = ['monkey', 'cat', 'dog'] 
+    text = r.recognize_google(audio)
+   
+   try:
+    index = name_list.index(text)
+   except ValueError:
+    index = -1
+
+    gameDisplay.fill(white)
+    if 0 <= index <= len(image_list): 
+        gameDisplay.blit(image_list[index], (130,0))
+    pygame.display.update()
+
+    if index > 0:
+        message_display('good job')
+    else:
+        message_display('wrong')
 
 
 def main():
