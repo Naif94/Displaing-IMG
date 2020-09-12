@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Sep  7 16:05:33 2020
-
-@author: naifali
-"""
 
 import glob
 import pygame
@@ -25,8 +18,14 @@ bright_red = (255,0,0)
 bright_green = (0,255,0)
 
 gameDisplay = pygame.display.set_mode((display_width,display_height))
-pygame.display.set_caption('Recognizing pictures')
+pygame.display.set_caption('GUI Speech Recognition')
 
+
+image_list = []
+image_name=[]
+for filename in glob.glob('MG/*.jpg'):
+    image_list.append(filename)
+    image_name.append(filename.split('\\')[1].split('.')[0])
 
 
 def close():
@@ -63,7 +62,7 @@ def button(msg,x,y,w,h,ic,ac,action=None):
    gameDisplay.blit(textSurf, textRect)
 
 def s2t():
-   
+  # gameDisplay.blit(carImg,(0,0))
    r = sr.Recognizer()
 
    with sr.Microphone() as source:
@@ -71,30 +70,46 @@ def s2t():
        audio = r.listen(source)
        print ('Done!')
 
-   image_list = []
-
-   for filename in glob.glob('IMG/*.jpg'):
-    
-    image_list.append(pygame.image.load(filename))
-    
-    name_list = ['monkey', 'cat', 'dog'] 
-    text = r.recognize_google(audio)
+   text = r.recognize_google(audio)
+   print(text)
    
-   try:
-    index = name_list.index(text)
-   except ValueError:
-    index = -1
-
-    gameDisplay.fill(white)
-    if 0 <= index <= len(image_list): 
-        gameDisplay.blit(image_list[index], (130,0))
-    pygame.display.update()
-
-    if index > 0:
-        message_display('good job')
-    else:
-        message_display('wrong')
-
+   for i in range(1,4):
+       
+       if i == 1:
+           index=0
+           gameDisplay.fill(white)
+           carImg = pygame.image.load(image_list[index])
+           pygame.display.update()
+           gameDisplay.blit(carImg,(130,0))
+           
+           if text == 'dog':
+               message_display('good job')
+           else:
+               message_display('wrong')
+               
+       elif i== 2:
+           index=1
+           gameDisplay.fill(white)
+           carImg = pygame.image.load(image_list[index])
+           pygame.display.update()
+           gameDisplay.blit(carImg,(130,0))
+           
+           if text == 'cat':
+               message_display('good job')
+           else:
+               message_display('wrong')
+       elif i== 3:
+           index=2
+           gameDisplay.fill(white)
+           carImg = pygame.image.load(image_list[index])
+           pygame.display.update()
+           gameDisplay.blit(carImg,(130,0))
+           
+           if text == 'rat':
+               message_display('good job')
+           else:
+               message_display('wrong')
+               
 
 def main():
    while True:
@@ -102,7 +117,7 @@ def main():
            if event.type == pygame.QUIT:
                pygame.quit()
                quit()
-       button("ans!",150,450,100,50,green,bright_green,s2t)
+       button("Speak!",150,450,100,50,green,bright_green,s2t)
        button("Quit",550,450,100,50,red,bright_red,close)
        pygame.display.update()
 
