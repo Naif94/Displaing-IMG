@@ -4,6 +4,7 @@ import pygame
 import time
 import speech_recognition as sr
 
+
 pygame.init()
 
 r= open("/Users/naifali/Desktop/test/Sound/wrong.wav",)
@@ -23,9 +24,10 @@ red = (200,0,0)
 green = (0,200,0)
 bright_red = (255,0,0)
 bright_green = (0,255,0)
-
+purple = (102, 0, 102)
+bright_purple= (153, 0, 153)
 gameDisplay = pygame.display.set_mode((display_width,display_height))
-pygame.display.set_caption('GUI Speech Recognition')
+pygame.display.set_caption(' Recognizing the Image ')
 
 current_path = os.path.dirname(__file__) 
 #resource_path = os.path.join(current_path, 'test') 
@@ -74,9 +76,9 @@ def load_the_image(image):
     return pygame.image.load(os.path.join(image_path,image))
 
 images = [
-    load_the_image('cat.jpg'),
+    load_the_image('tiger.jpg'),
     load_the_image('monkey.jpg'),
-    load_the_image('dog.jpg'),
+    load_the_image('panda.jpg'),
     load_the_image('green.jpg'),
     load_the_image('red.jpg'),
     load_the_image('yellow.jpg'),
@@ -86,36 +88,40 @@ images = [
 ]
 
 
-def plays():
+def play_in_sp():
     
-    for i in range(1,7):
+    for i in range(1,10):
        
-       
-     
+       #
       if i== 1:
 
-        carImg = pygame.image.load(os.path.join(image_path,'cat.jpg'))
-        gameDisplay.blit(carImg,(130,0))
-        pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
-    
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-        
-    
-        if text == 'cat':
-            print(text)
-            print('good job') 
-        else:
-            print(text)
-            print('wrong')
-        time.sleep(7)
+            carImg = pygame.image.load(os.path.join(image_path,'tiger.jpg'))
+            gameDisplay.blit(carImg,(130,0))
+            pygame.display.update()
+            
+            for j in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio, language='es-MX')
+                    except:
+                        print('Did not get that try Again')
+                        text=''
+            
+                    if text == 'tiger':
+                        print('good job') 
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                        break
+                    else:
+                        print('wrong try again')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+            time.sleep(4)
       
        
       elif i== 2:
@@ -123,189 +129,232 @@ def plays():
         carImg = pygame.image.load(os.path.join(image_path,'monkey.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
-    
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-        if text == 'monkey':
-            print(text)
-            print('good job') 
-        else:
-            print(text)
-            print('wrong')
-        time.sleep(7)
+         
+        for a in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio, language='es-MX')
+                    except:
+                        print('Did not get that try Again')
+                        text=''
+        
+                    if text == 'monkey':
+                        print('good job') 
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                        break
+                    else:
+                        print('wrong ya wad')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
        
       elif i== 3:
            
-        carImg = pygame.image.load(os.path.join(image_path,'dog.jpg'))
+        carImg = pygame.image.load(os.path.join(image_path,'panda.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+       
+        for b in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio, language='es-MX')
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-            if text == 'dog':
-                print('good job') 
-        else:
-            print('wrong')
-        time.sleep(7)
+                    if text == 'panda':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
        
       elif i== 4:
            
         carImg = pygame.image.load(os.path.join(image_path,'green.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        for c in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio, language='es-MX')
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-            if text == 'green':
-                print('good job') 
-        else:
-            print('wrong')
-            time.sleep(7)
+                    if text == 'green':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
         
       elif i== 5:
            
         carImg = pygame.image.load(os.path.join(image_path,'red.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        
+        for d in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio, language='es-MX')
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-            if text == 'red':
-                print('good job')
-        else:
-            print('wrong')
-            time.sleep(7)
+                    if text == 'red':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
         
       elif i== 6:
            
         carImg = pygame.image.load(os.path.join(image_path,'yellow.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        for e in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio, language='es-MX')
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-            if text == 'yellow':
-                print('good job')
-        else:
-            print('wrong')
-            time.sleep(7)   
+                    if text == 'yellow':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)   
       
       elif i== 7:
            
         carImg = pygame.image.load(os.path.join(image_path,'circle.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        for f in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio, language='es-MX')
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-            if text == 'circle':
-                print('good job')
-        else:
-            print('wrong')
-            time.sleep(7)
+                    if text == 'circle':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
      
       elif i== 8:
            
         carImg = pygame.image.load(os.path.join(image_path,'square.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        for g in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio, language='es-MX')
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-            if text == 'square':
-                print('good job')
-        else:
-            print('wrong')
-            time.sleep(7)
+                    if text == 'square':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
       
       elif i== 9:
-          
+           
         carImg = pygame.image.load(os.path.join(image_path,'triangle.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        for h in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio, language='es-MX')
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-            if text == 'triangle':
-                print('good job')
-        else:
-            print('wrong')
-            time.sleep(7)
+                    if text == 'triangle':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
+      
 
 
-def s2te():
+def play_in_eg():
   
           
      
@@ -316,30 +365,33 @@ def s2te():
        
        if i== 1:
 
-        carImg = pygame.image.load(os.path.join(image_path,'cat.jpg'))
-        gameDisplay.blit(carImg,(130,0))
-        pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
-    
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-        if text == 'cat':
-            print('good job') 
-            pygame.mixer.Sound.play(right)
-            pygame.mixer.music.stop()
-        else:
-            print('wrong')
-            pygame.mixer.Sound.play(wrong)
-            pygame.mixer.music.stop()
-        time.sleep(7)
+            carImg = pygame.image.load(os.path.join(image_path,'tiger.jpg'))
+            gameDisplay.blit(carImg,(130,0))
+            pygame.display.update()
+            
+            for j in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio)
+                    except:
+                        print('Did not get that try Again')
+                        text=''
+            
+                    if text == 'tiger':
+                        print('good job') 
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                        break
+                    else:
+                        print('wrong try again')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+            time.sleep(4)
       
        
        elif i== 2:
@@ -347,225 +399,237 @@ def s2te():
         carImg = pygame.image.load(os.path.join(image_path,'monkey.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
-    
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-        if text == 'monkey':
-            print('good job') 
-            pygame.mixer.Sound.play(right)
-            pygame.mixer.music.stop()
-        else:
-            print('wrong')
-            pygame.mixer.Sound.play(wrong)
-            pygame.mixer.music.stop()
-        time.sleep(7)
+         
+        for a in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio)
+                    except:
+                        print('Did not get that try Again')
+                        text=''
+        
+                    if text == 'monkey':
+                        print('good job') 
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                        break
+                    else:
+                        print('wrong ya wad')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
        
        elif i== 3:
            
-        carImg = pygame.image.load(os.path.join(image_path,'dog.jpg'))
+        carImg = pygame.image.load(os.path.join(image_path,'panda.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+       
+        for b in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio)
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-        if text == 'dog':
-            print('good job')
-            pygame.mixer.Sound.play(right)
-            pygame.mixer.music.stop()
-        else:
-            print('wrong')
-            pygame.mixer.Sound.play(wrong)
-            pygame.mixer.music.stop()
-        time.sleep(7)
+                    if text == 'panda':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
        
        elif i== 4:
            
         carImg = pygame.image.load(os.path.join(image_path,'green.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        for c in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio)
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-        if text == 'green':
-            print('good job')
-            pygame.mixer.Sound.play(right)
-            pygame.mixer.music.stop()
-        else:
-            print('wrong')
-            pygame.mixer.Sound.play(wrong)
-            pygame.mixer.music.stop()
-            time.sleep(7)
+                    if text == 'green':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
         
        elif i== 5:
            
         carImg = pygame.image.load(os.path.join(image_path,'red.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        
+        for d in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio)
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-        if text == 'red':
-            print('good job')
-            pygame.mixer.Sound.play(right)
-            pygame.mixer.music.stop()
-        else:
-            print('wrong')
-            pygame.mixer.Sound.play(wrong)
-            pygame.mixer.music.stop()
-            time.sleep(7)
+                    if text == 'red':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
         
        elif i== 6:
            
         carImg = pygame.image.load(os.path.join(image_path,'yellow.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        for e in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio)
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-        if text == 'yellow':
-            print('good job')
-            pygame.mixer.Sound.play(right)
-            pygame.mixer.music.stop()
-        else:
-            print('wrong')
-            pygame.mixer.Sound.play(wrong)
-            pygame.mixer.music.stop()
-            time.sleep(7)   
+                    if text == 'yellow':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)   
       
        elif i== 7:
            
         carImg = pygame.image.load(os.path.join(image_path,'circle.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        for f in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio)
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-        if text == 'circle':
-            print('good job')
-            pygame.mixer.Sound.play(right)
-            pygame.mixer.music.stop()
-        else:
-            print('wrong')
-            pygame.mixer.Sound.play(wrong)
-            pygame.mixer.music.stop()
-            time.sleep(7)
+                    if text == 'circle':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
      
        elif i== 8:
            
         carImg = pygame.image.load(os.path.join(image_path,'square.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        for g in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio)
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-        if text == 'square':
-            print('good job')
-            pygame.mixer.Sound.play(right)
-            pygame.mixer.music.stop()
-        else:
-            print('wrong')
-            pygame.mixer.Sound.play(wrong)
-            pygame.mixer.music.stop()
-            time.sleep(7)
+                    if text == 'square':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
       
        elif i== 9:
            
         carImg = pygame.image.load(os.path.join(image_path,'triangle.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        for h in range(1,4):
+                    r = sr.Recognizer()
+                    with sr.Microphone() as source:
+            
+                     print ('Say Something!')
+                     audio = r.listen(source)
+                    try:
+                        text = r.recognize_google(audio)
+                    except:
+                        print('Did not get that try Again')
+                        text=''
     
-            print ('Say Something!')
-            audio = r.listen(source)
-    
-        try:
-            text = r.recognize_google(audio)
-        except:
-            print('Did not get that')
-            text=''
-    
-        if text == 'triangle':
-            print('good job')
-            pygame.mixer.Sound.play(right)
-            pygame.mixer.music.stop()
-        else:
-            print('wrong')
-            pygame.mixer.Sound.play(wrong)
-            pygame.mixer.music.stop()
-            time.sleep(7)
+                    if text == 'triangle':
+                        print('good job')
+                        pygame.mixer.Sound.play(right)
+                        pygame.mixer.music.stop()
+                    else:
+                        print('wrong')
+                        pygame.mixer.Sound.play(wrong)
+                        pygame.mixer.music.stop()
+                        time.sleep(3)
+        time.sleep(4)
 def main():
    while True:
        for event in pygame.event.get():
            if event.type == pygame.QUIT:
                pygame.quit()
                quit()
-       button("Play! in English",150,450,100,50,green,bright_green,s2te)
-       button("Play! in Spanish",350,450,100,50,green,bright_green,plays)
-       button("Quit",550,450,100,50,red,bright_red,close)
+       button("English",150,350,100,50,green,bright_green,play_in_eg)
+       button("Spanish",350,350,100,50,purple,bright_purple,play_in_sp)
+       button("Quit",550,350,100,50,red,bright_red,close)
        pygame.display.update()
 
 if __name__ == '__main__':
