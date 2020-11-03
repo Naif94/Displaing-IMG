@@ -3,7 +3,10 @@ import glob
 import pygame
 import time
 import speech_recognition as sr
-
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(18,GPIO.OUT)
 
 pygame.init()
 
@@ -385,6 +388,9 @@ def play_in_eg():
                         print('good job') 
                         pygame.mixer.Sound.play(right)
                         pygame.mixer.music.stop()
+                        GPIO.output(18,GPIO.HIGH)
+                        time.sleep(3)
+                        GPIO.output(18,GPIO.LOW)
                         break
                     else:
                         print('wrong try again')
