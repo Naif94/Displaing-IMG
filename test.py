@@ -22,14 +22,14 @@ triangle = pygame.mixer.Sound("/home/pi/Game/WAV_EN_22050Fs/triangle.wav")
 # Spanih audio files
 Tiger_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Tiger.wav")
 Monkey_e= pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Monkey_mono.wav")
-Panda_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Panda.wav")
-Green_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Green.wav")
-Red_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Red.wav")
-Yellow_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Yellow.wav")
-Heart_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Heart.wav")
-Circle_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Circle.wav")
-square_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/square.wav")
-triangle_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/triangle.wav")
+Panda_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Panda_oso Panda.wav")
+Green_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Green_Verde.wav")
+Red_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Red_Rojo.wav")
+Yellow_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Yellow_amarillo.wav")
+Heart_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/HeartCorazon.wav")
+Circle_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Circle_Circulo.wav")
+square_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Square_Cuadrado.wav")
+triangle_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Triangle_Triangulo_1.wav")
 
 display_width = 800
 display_height = 480
