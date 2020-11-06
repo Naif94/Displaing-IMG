@@ -9,7 +9,7 @@ import speech_recognition as sr
 pygame.init()
 # English audio files
 right = pygame.mixer.Sound("/home/pi/Game/WAV_EN_22050Fs/right.wav")
-wrong= pygame.mixer.Sound("/home/pi/Game/WAV_EN_22050Fs/tagain.wav")
+wrong= pygame.mixer.Sound("/home/pi/Game/WAV_EN_22050Fs/ again.wav")
 
 Tiger = pygame.mixer.Sound("/home/pi/Game/WAV_EN_22050Fs/Tiger.wav")
 Monkey= pygame.mixer.Sound("/home/pi/Game/WAV_EN_22050Fs/Monkey.wav")
@@ -23,8 +23,8 @@ Square = pygame.mixer.Sound("/home/pi/Game/WAV_EN_22050Fs/square.wav")
 Triangle = pygame.mixer.Sound("/home/pi/Game/WAV_EN_22050Fs/triangle.wav")
 
 # Spanih audio files
-right_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/right_e.wav")
-wrong_e = pygame.mixer.Sound("/home/pi/Game/WAV_EN_22050Fs/wrong_e.wav")
+# right_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/right_e.wav")
+# wrong_e = pygame.mixer.Sound("/home/pi/Game/WAV_EN_22050Fs/wrong_e.wav")
 
 Tiger_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Tiger.wav")
 Monkey_e= pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Monkey_mono.wav")
@@ -782,3 +782,4 @@ def main():
 
 if __name__ == '__main__':
    main()
+
