@@ -118,7 +118,7 @@ def play_in_sp():
        
        #
       if i== 1:
-
+            counter = 0
             carImg = pygame.image.load(os.path.join(image_path,'tiger.jpg'))
             gameDisplay.blit(carImg,(130,0))
             pygame.display.update()
@@ -143,15 +143,17 @@ def play_in_sp():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong try again')
-                        pygame.mixer.Sound.play(wrong_e)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong_e)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
             time.sleep(4)
       
        
       elif i== 2:
-
+        counter = 0
         carImg = pygame.image.load(os.path.join(image_path,'monkey.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -177,14 +179,16 @@ def play_in_sp():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong ya wad')
-                        pygame.mixer.Sound.play(wrong_e)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong_e)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
        
       elif i== 3:
-           
+        counter = 0  
         carImg = pygame.image.load(os.path.join(image_path,'panda.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -209,14 +213,16 @@ def play_in_sp():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong_e)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong_e)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
        
       elif i== 4:
-           
+        counter = 0  
         carImg = pygame.image.load(os.path.join(image_path,'green.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -241,14 +247,16 @@ def play_in_sp():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong_e)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong_e)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
         
       elif i== 5:
-           
+        counter = 0  
         carImg = pygame.image.load(os.path.join(image_path,'red.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -273,14 +281,16 @@ def play_in_sp():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong_e)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong_e)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
         
       elif i== 6:
-           
+        counter = 0  
         carImg = pygame.image.load(os.path.join(image_path,'yellow.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -305,14 +315,16 @@ def play_in_sp():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong_e)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong_e)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)   
       
       elif i== 7:
-           
+        counter = 0   
         carImg = pygame.image.load(os.path.join(image_path,'heart.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -338,14 +350,16 @@ def play_in_sp():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong_e)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong_e)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
       
       elif i== 8:
-           
+        counter = 0   
         carImg = pygame.image.load(os.path.join(image_path,'circle.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -370,14 +384,16 @@ def play_in_sp():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong_e)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong_e)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
      
       elif i== 9:
-           
+        counter = 0   
         carImg = pygame.image.load(os.path.join(image_path,'square.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -402,14 +418,16 @@ def play_in_sp():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong_e)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong_e)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
       
       elif i== 10:
-           
+        counter = 0   
         carImg = pygame.image.load(os.path.join(image_path,'triangle.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -434,10 +452,12 @@ def play_in_sp():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong_e)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong_e)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
       
 
@@ -452,7 +472,7 @@ def play_in_eg():
        
        
        if i== 1:
-
+            counter = 0
             carImg = pygame.image.load(os.path.join(image_path,'tiger.jpg'))
             gameDisplay.blit(carImg,(130,0))
             pygame.display.update()
@@ -478,15 +498,17 @@ def play_in_eg():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong try again')
-                        pygame.mixer.Sound.play(wrong)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
             time.sleep(4)
       
        
        elif i== 2:
-
+        counter = 0
         carImg = pygame.image.load(os.path.join(image_path,'monkey.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -512,14 +534,16 @@ def play_in_eg():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong ya wad')
-                        pygame.mixer.Sound.play(wrong)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
        
        elif i== 3:
-           
+        counter = 0  
         carImg = pygame.image.load(os.path.join(image_path,'panda.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -545,14 +569,16 @@ def play_in_eg():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
        
        elif i== 4:
-           
+        counter = 0   
         carImg = pygame.image.load(os.path.join(image_path,'green.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -578,14 +604,16 @@ def play_in_eg():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
         
        elif i== 5:
-           
+        counter = 0   
         carImg = pygame.image.load(os.path.join(image_path,'red.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -611,14 +639,16 @@ def play_in_eg():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
         
        elif i== 6:
-           
+        counter = 0   
         carImg = pygame.image.load(os.path.join(image_path,'yellow.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -644,14 +674,16 @@ def play_in_eg():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)   
       
        elif i== 7:
-           
+        counter = 0  
         carImg = pygame.image.load(os.path.join(image_path,'heart.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -677,14 +709,16 @@ def play_in_eg():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
      
        elif i== 8:
-           
+        counter = 0   
         carImg = pygame.image.load(os.path.join(image_path,'circle.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -710,14 +744,16 @@ def play_in_eg():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
        
        elif i== 9:
-           
+        counter = 0   
         carImg = pygame.image.load(os.path.join(image_path,'square.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -743,14 +779,16 @@ def play_in_eg():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
       
        elif i== 10:
-           
+        counter = 0  
         carImg = pygame.image.load(os.path.join(image_path,'triangle.jpg'))
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
@@ -776,10 +814,12 @@ def play_in_eg():
                         pygame.mixer.music.stop()
                         break
                     else:
-                        print('wrong')
-                        pygame.mixer.Sound.play(wrong)
-                        pygame.mixer.music.stop()
-                        time.sleep(3)
+                        if counter <2:
+                            print('wrong try again')
+                            pygame.mixer.Sound.play(wrong)
+                            pygame.mixer.music.stop()
+                            time.sleep(3)
+                            counter += 1
         time.sleep(4)
 def main():
    while True:
