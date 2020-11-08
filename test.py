@@ -124,7 +124,7 @@ def play_in_sp():
             pygame.display.update()
             pygame.mixer.Sound.play(Tiger_e)
             pygame.mixer.music.stop()
-            
+            time.sleep(17)
             for j in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -157,6 +157,7 @@ def play_in_sp():
         pygame.display.update()
         pygame.mixer.Sound.play(Monkey_e)
         pygame.mixer.music.stop()
+        time.sleep(9)
          
         for a in range(1,4):
                     r = sr.Recognizer()
@@ -189,6 +190,7 @@ def play_in_sp():
         pygame.display.update()
         pygame.mixer.Sound.play(Panda_e)
         pygame.mixer.music.stop()
+        time.sleep(11)
         for b in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -220,6 +222,7 @@ def play_in_sp():
         pygame.display.update()
         pygame.mixer.Sound.play(Green_e)
         pygame.mixer.music.stop()
+        time.sleep(9)
         for c in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -251,7 +254,7 @@ def play_in_sp():
         pygame.display.update()
         pygame.mixer.Sound.play(Red_e)
         pygame.mixer.music.stop()
-        
+        time.sleep(10)
         for d in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -283,6 +286,7 @@ def play_in_sp():
         pygame.display.update()
         pygame.mixer.Sound.play(Yellow_e)
         pygame.mixer.music.stop()
+        time.sleep(12)
         for e in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -314,6 +318,7 @@ def play_in_sp():
         pygame.display.update()
         pygame.mixer.Sound.play(Heart_e)
         pygame.mixer.music.stop()
+        time.sleep(11)
         for f in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -346,6 +351,7 @@ def play_in_sp():
         pygame.display.update()
         pygame.mixer.Sound.play(Circle_e)
         pygame.mixer.music.stop()
+        time.sleep(9)
         for f in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -376,7 +382,8 @@ def play_in_sp():
         gameDisplay.blit(carImg,(130,0))
         pygame.display.update()
         pygame.mixer.Sound.play(Square_e)
-        pygame.mixer.music.stop()
+        pygame.mixer.music.stop
+        time.sleep(11)
         for g in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -408,6 +415,7 @@ def play_in_sp():
         pygame.display.update()
         pygame.mixer.Sound.play(Triangle_e)
         pygame.mixer.music.stop()
+        time.sleep(13)
         for h in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -450,7 +458,7 @@ def play_in_eg():
             pygame.display.update()
             pygame.mixer.Sound.play(Tiger)
             pygame.mixer.music.stop()
-            
+            time.sleep(8)
             for j in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -484,7 +492,7 @@ def play_in_eg():
         pygame.display.update()
         pygame.mixer.Sound.play(Monkey)
         pygame.mixer.music.stop()
-         
+        time.sleep(8)
         for a in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -517,7 +525,7 @@ def play_in_eg():
         pygame.display.update()
         pygame.mixer.Sound.play(Panda)
         pygame.mixer.music.stop()
-       
+        time.sleep(9)
         for b in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -550,6 +558,7 @@ def play_in_eg():
         pygame.display.update()
         pygame.mixer.Sound.play(Green)
         pygame.mixer.music.stop()
+        time.sleep(8)
         for c in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -582,7 +591,7 @@ def play_in_eg():
         pygame.display.update()
         pygame.mixer.Sound.play(Red)
         pygame.mixer.music.stop()
-        
+        time.sleep(8)
         for d in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -615,6 +624,7 @@ def play_in_eg():
         pygame.display.update()
         pygame.mixer.Sound.play(Yellow)
         pygame.mixer.music.stop()
+        time.sleep(7)
         for e in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -647,6 +657,7 @@ def play_in_eg():
         pygame.display.update()
         pygame.mixer.Sound.play(Heart)
         pygame.mixer.music.stop()
+        time.sleep(7)
         for f in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -679,6 +690,7 @@ def play_in_eg():
         pygame.display.update()
         pygame.mixer.Sound.play(Circle)
         pygame.mixer.music.stop()
+        time.sleep(8)
         for f in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -711,6 +723,7 @@ def play_in_eg():
         pygame.display.update()
         pygame.mixer.Sound.play(Square)
         pygame.mixer.music.stop()
+        time.sleep(8)
         for g in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
@@ -743,6 +756,7 @@ def play_in_eg():
         pygame.display.update()
         pygame.mixer.Sound.play(Triangle)
         pygame.mixer.music.stop()
+        time.sleep(9)
         for h in range(1,4):
                     r = sr.Recognizer()
                     with sr.Microphone() as source:
