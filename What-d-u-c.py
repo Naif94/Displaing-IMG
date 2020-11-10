@@ -39,8 +39,8 @@ Triangle_e = pygame.mixer.Sound("/home/pi/Game/Audio_22050Fs/Triangle_Triangulo_
 
 
 
-display_width = 600
-display_height = 600
+display_width = 800
+display_height = 480
 
 black = (0,0,0)
 alpha = (0,88,255)
@@ -84,7 +84,7 @@ def text_objects(text, font):
    return textSurface, textSurface.get_rect()
 
 def button(msg, x, ic, ac, action=None):
-    y =450;
+    y =250;
     w=100;
     h=50;
     mouse = pygame.mouse.get_pos()
@@ -836,9 +836,10 @@ def Game1():
            if event.type == pygame.QUIT:
                pygame.quit()
                quit()
-       button("English",150,350,100,50,green,bright_green,play_in_eg)
-       button("Spanish",250,350,100,50,purple,bright_purple,play_in_sp)
-       button("Quit",350,350,100,50,red,bright_red,close)
+       pygame.display.update()        
+       button("English",150,green,bright_green,play_in_eg)
+       button("Spanish",250,purple,bright_purple,play_in_sp)
+       button("Quit",450,red,bright_red,close)
        pygame.display.update()
 
 
@@ -921,11 +922,11 @@ def Game2():
 
         if screen==0 and screenS==13 :
             
-            Img =   pygame.image.load(os.path.join(image_path, "Lalaa.jpg"))
+            Img =   pygame.image.load(os.path.join(image_path, "lalaa.jpg"))
             gameDisplay.blit(Img, (0, 0))
-            button("Quit", 450, red, bright_red, close)
-            button("English", 150, green, bright_green, game)
-            button("Spanish", 50, blue, bright_bule, gameS)
+            button("Quit",450,red, bright_red, close)
+            button("English",350,green, bright_green, game)
+            button("Spanish",250,blue, bright_bule, gameS)
             pygame.display.update()
 
         elif screen==1:
@@ -1294,10 +1295,11 @@ def main():
            if event.type == pygame.QUIT:
                pygame.quit()
                quit()
-       button("Game1",30,350,100,50,green,bright_green,Game1)
-       button("Game2",350,350,100,50,purple,bright_purple,Game2)
-       button("Quit",450,350,100,50,red,bright_red,close)
+       button("Game1",80,green,bright_green,Game1)
+       button("Game2",180,purple,bright_purple,Game2)
+       button("Quit",450,red,bright_red,close)
        pygame.display.update()
 
 if __name__ == '__main__':
    main()
+
