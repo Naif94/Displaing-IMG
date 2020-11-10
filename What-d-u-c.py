@@ -836,9 +836,9 @@ def Game1():
            if event.type == pygame.QUIT:
                pygame.quit()
                quit()
-       button("English",150,green,bright_green,play_in_eg)
-       button("Spanish",50,purple,bright_purple,play_in_sp)
-       button("Quit",450,red,bright_red,close)
+       button("English",150,350,100,50,green,bright_green,play_in_eg)
+       button("Spanish",250,350,100,50,purple,bright_purple,play_in_sp)
+       button("Quit",350,350,100,50,red,bright_red,close)
        pygame.display.update()
 
 
@@ -1294,9 +1294,9 @@ def main():
            if event.type == pygame.QUIT:
                pygame.quit()
                quit()
-       button("Game1",50,green,bright_green,Game1)
-       button("Game2",150,purple,bright_purple,Game2)
-       button("Quit",450,red,bright_red,close)
+       button("Game1",30,350,100,50,green,bright_green,Game1)
+       button("Game2",350,350,100,50,purple,bright_purple,Game2)
+       button("Quit",450,350,100,50,red,bright_red,close)
        pygame.display.update()
 
 if __name__ == '__main__':
