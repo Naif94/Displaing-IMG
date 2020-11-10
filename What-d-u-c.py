@@ -1295,6 +1295,8 @@ def main():
            if event.type == pygame.QUIT:
                pygame.quit()
                quit()
+       carImg = pygame.image.load(os.path.join(image_path,'Cover.jpg'))
+       gameDisplay.blit(carImg,(0,0))
        button("Game1",80,green,bright_green,Game1)
        button("Game2",180,purple,bright_purple,Game2)
        button("Quit",450,red,bright_red,close)
