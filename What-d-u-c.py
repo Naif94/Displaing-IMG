@@ -5,6 +5,11 @@ import time
 import speech_recognition as sr
 import random  # we use this to make a random right button
 import sys
+from gpiozero import LED
+from time import sleep
+
+riht=LED(18)
+RR=LED(17)
 
 pygame.init()
 """ loading English audio files """
@@ -856,6 +861,9 @@ def Check_right():
     message_display("good job")
     pygame.mixer.Sound.play(right_s)
     pygame.mixer.music.stop()
+    riht.on()
+    sleep(2)
+    riht.off()
     print("good job")
     screen += 1
 
@@ -868,6 +876,9 @@ def Check_wrong():
     message_display("wrong")
     pygame.mixer.Sound.play(wrong)
     pygame.mixer.music.stop()
+    RR.on()
+    sleep(2)
+    RR.off()
     print("wrong")
 
 
@@ -880,6 +891,9 @@ def Check_right_s():
     message_display("Salidas")
     pygame.mixer.Sound.play(right_e)
     pygame.mixer.music.stop()
+    riht.on()
+    sleep(2)
+    riht.off()
     print("good job")
     screen += 1
 """ This function is to print & display Wrong massege"""
@@ -888,6 +902,9 @@ def Check_wrong_s():
     message_display("Buen Trabajo")
     pygame.mixer.Sound.play(wrong_e)
     pygame.mixer.music.stop()
+    RR.on()
+    sleep(2)
+    RR.off()
     print("wrong")
 
 
@@ -1310,4 +1327,5 @@ def main():
 
 if __name__ == '__main__':
    main()
+
 
