@@ -877,7 +877,7 @@ def Check_wrong():
 def Check_right_s():
     global screen
     gameDisplay.blit(Img, (0, 0))
-    message_display("good job")
+    message_display("Salidas")
     pygame.mixer.Sound.play(right_e)
     pygame.mixer.music.stop()
     print("good job")
@@ -885,7 +885,7 @@ def Check_right_s():
 """ This function is to print & display Wrong massege"""
 def Check_wrong_s():
     gameDisplay.blit(Img, (0, 0))
-    message_display("wrong")
+    message_display("Buen Trabajo")
     pygame.mixer.Sound.play(wrong_e)
     pygame.mixer.music.stop()
     print("wrong")
@@ -1122,12 +1122,12 @@ def Game2():
             if NewRightButton == 1:
                 button("Tigre", 150,  green, bright_green, Check_right_s)
                 button("Perro", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
             else:
                 button("Perro", 50, blue, bright_bule, Check_wrong_s)
                 button("Tigre", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
         elif screen==15:
@@ -1135,14 +1135,14 @@ def Game2():
             gameDisplay.blit(Img, (0, 0))
             if NewRightButton == 1:
                 button("Oso", 150,  green, bright_green, Check_right_s)
-                button("Fish", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Pescado", 50, blue, bright_bule, Check_wrong_s)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
             else:
-                button("Fish", 150,  green, bright_green, Check_wrong_s)
+                button("Pescado", 150,  green, bright_green, Check_wrong_s)
                 button("Oso", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
         elif screen==16:
@@ -1150,42 +1150,42 @@ def Game2():
             gameDisplay.blit(Img, (0, 0))
             if NewRightButton == 1:
                 button("Mono", 150,  green, bright_green, Check_right_s)
-                button("Duck", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Pato", 50, blue, bright_bule, Check_wrong_s)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
             else:
-                button("Duck", 150,  green, bright_green, Check_wrong_s)
+                button("Pato", 150,  green, bright_green, Check_wrong_s)
                 button("Mono", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
         elif screen==17:
             Img =   pygame.image.load(os.path.join(image_path, "cat.jpg"))
             gameDisplay.blit(Img, (0, 0))
             if NewRightButton == 1:
                 button("Gato", 150,  green, bright_green, Check_right_s)
-                button("Elephant", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Elefante", 50, blue, bright_bule, Check_wrong_s)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
             else:
-                button("Elephant", 150,  green, bright_green, Check_wrong_s)
+                button("Elefante", 150,  green, bright_green, Check_wrong_s)
                 button("Gato", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
         elif screen==18:
             Img =   pygame.image.load(os.path.join(image_path, "blue.jpg"))
             gameDisplay.blit(Img, (0, 0))
             if NewRightButton == 1:
                 button("Azul", 150,  green, bright_green, Check_right_s)
-                button("White", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Blanco", 50, blue, bright_bule, Check_wrong_s)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
             else:
-                button("White", 150,  green, bright_green, Check_wrong_s)
+                button("Blanco", 150,  green, bright_green, Check_wrong_s)
                 button("Azul", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
                 
         elif screen==19:
@@ -1193,42 +1193,42 @@ def Game2():
             gameDisplay.blit(Img, (0, 0))
             if NewRightButton == 1:
                 button("Amarillo", 150,  green, bright_green, Check_right_s)
-                button("Black", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Negro", 50, blue, bright_bule, Check_wrong_s)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
             else:
-                button("Black", 150,  green, bright_green, Check_wrong_s)
+                button("Negro", 150,  green, bright_green, Check_wrong_s)
                 button("Amarillo", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
         elif screen==20:
             Img =   pygame.image.load(os.path.join(image_path, "red.jpg"))
             gameDisplay.blit(Img, (0, 0))
             if NewRightButton == 1:
                 button("Rojo", 150,  green, bright_green, Check_right_s)
-                button("pink", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("rosado", 50, blue, bright_bule, Check_wrong_s)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
             else:
-                button("pink", 150,  green, bright_green, Check_wrong_s)
+                button("Rosado", 150,  green, bright_green, Check_wrong_s)
                 button("Rojo", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
         elif screen==21:
             Img =   pygame.image.load(os.path.join(image_path, "green.jpg"))
             gameDisplay.blit(Img, (0, 0))
             if NewRightButton == 1:
                 button("Verde", 150,  green, bright_green, Check_right_s)
-                button("brown", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Marron", 50, blue, bright_bule, Check_wrong_s)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
             else:
-                button("Brown", 150,  green, bright_green, Check_wrong_s)
+                button("Marron", 150,  green, bright_green, Check_wrong_s)
                 button("Verde", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
         elif screen==22:
             Img =   pygame.image.load(os.path.join(image_path, "heart.jpg"))
@@ -1236,13 +1236,13 @@ def Game2():
             if NewRightButton == 1:
                 button("Corazon", 150,  green, bright_green, Check_right_s)
                 button("Triangulo", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
             else:
                 button("Triangulo", 150,  green, bright_green, Check_wrong_s)
                 button("Corazon", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
         elif screen==23:
             Img =   pygame.image.load(os.path.join(image_path, "square.jpg"))
@@ -1250,13 +1250,13 @@ def Game2():
             if NewRightButton == 1:
                 button("Cuadrodo", 150,  green, bright_green, Check_right_s)
                 button("Cubico", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
             else:
                 button("Cubico", 150,  green, bright_green, Check_wrong_s)
                 button("Cuadrodo", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
         elif screen==24:
             Img =   pygame.image.load(os.path.join(image_path, "triangle.jpg"))
@@ -1264,13 +1264,13 @@ def Game2():
             if NewRightButton == 1:
                 button("Triangulo", 150,  green, bright_green, Check_right_s)
                 button("Cilindro", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
             else:
                 button("Cilindro", 150,  green, bright_green, Check_wrong_s)
                 button("Triangulo", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
         elif screen==25:
             Img =   pygame.image.load(os.path.join(image_path, "circle.jpg"))
@@ -1278,19 +1278,19 @@ def Game2():
             if NewRightButton == 1:
                 button("Circulo", 150,  green, bright_green, Check_right_s)
                 button("Cubico", 50, blue, bright_bule, Check_wrong_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
 
             else:
                 button("Cubico", 150,  green, bright_green, Check_wrong_s)
                 button("Circulo", 50, blue, bright_bule, Check_right_s)
-                button("Quit", 450,  red, bright_red, close)
+                button("Salidas", 450,  red, bright_red, close)
                 pygame.display.update()
         elif screen==26:
             Img = pygame.image.load(os.path.join(image_path, "elif.jpg"))
             gameDisplay.blit(Img, (0, 0))
-            message_display("end of the game")
-            button("Quit", 450, red, bright_red, close)
+            message_display("Fin del juego")
+            button("Salidas", 450, red, bright_red, close)
             pygame.display.update()
             print("end of the game")
             main()
