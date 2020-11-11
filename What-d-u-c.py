@@ -155,12 +155,18 @@ def play_in_sp():
                         print('good job') 
                         pygame.mixer.Sound.play(right_e)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong_e)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
             time.sleep(4)
@@ -191,12 +197,18 @@ def play_in_sp():
                         print('good job') 
                         pygame.mixer.Sound.play(right_e)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong_e)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -225,12 +237,18 @@ def play_in_sp():
                         print('good job')
                         pygame.mixer.Sound.play(right_e)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong_e)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -259,12 +277,18 @@ def play_in_sp():
                         print('good job')
                         pygame.mixer.Sound.play(right_e)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong_e)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -293,12 +317,18 @@ def play_in_sp():
                         print('good job')
                         pygame.mixer.Sound.play(right_e)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong_e)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -327,12 +357,18 @@ def play_in_sp():
                         print('good job')
                         pygame.mixer.Sound.play(right_e)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong_e)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)   
@@ -362,12 +398,18 @@ def play_in_sp():
                         print('good job')
                         pygame.mixer.Sound.play(right_e)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong_e)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -396,12 +438,18 @@ def play_in_sp():
                         print('good job')
                         pygame.mixer.Sound.play(right_e)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong_e)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -430,12 +478,18 @@ def play_in_sp():
                         print('good job')
                         pygame.mixer.Sound.play(right_e)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong_e)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -464,12 +518,18 @@ def play_in_sp():
                         print('good job')
                         pygame.mixer.Sound.play(right_e)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong_e)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -509,12 +569,18 @@ def play_in_eg():
                         print('good job') 
                         pygame.mixer.Sound.play(right)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
             time.sleep(4)
@@ -545,12 +611,18 @@ def play_in_eg():
                         print('good job') 
                         pygame.mixer.Sound.play(right)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -580,12 +652,18 @@ def play_in_eg():
                         print('good job')
                         pygame.mixer.Sound.play(right)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -615,12 +693,18 @@ def play_in_eg():
                         print('good job')
                         pygame.mixer.Sound.play(right)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -650,12 +734,18 @@ def play_in_eg():
                         print('good job')
                         pygame.mixer.Sound.play(right)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -685,12 +775,18 @@ def play_in_eg():
                         print('good job')
                         pygame.mixer.Sound.play(right)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)   
@@ -720,12 +816,18 @@ def play_in_eg():
                         print('good job')
                         pygame.mixer.Sound.play(right)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -755,12 +857,18 @@ def play_in_eg():
                         print('good job')
                         pygame.mixer.Sound.play(right)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -790,12 +898,18 @@ def play_in_eg():
                         print('good job')
                         pygame.mixer.Sound.play(right)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -825,12 +939,18 @@ def play_in_eg():
                         print('good job')
                         pygame.mixer.Sound.play(right)
                         pygame.mixer.music.stop()
+                        riht.on()
+                        sleep(2)
+                        riht.off()
                         break
                     else:
                         if counter <2:
                             print('wrong try again')
                             pygame.mixer.Sound.play(wrong)
                             pygame.mixer.music.stop()
+                            RR.on()
+                            sleep(2)
+                            RR.off()
                             time.sleep(3)
                             counter += 1
         time.sleep(4)
@@ -859,7 +979,7 @@ def Check_right():
     global screen
     gameDisplay.blit(Img, (0, 0))
     message_display("good job")
-    pygame.mixer.Sound.play(right_s)
+    pygame.mixer.Sound.play(right)
     pygame.mixer.music.stop()
     riht.on()
     sleep(2)
